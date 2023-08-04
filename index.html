@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>NECEC</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var navbarNav = document.querySelector('.navbar-nav');
+        var navItems = Array.from(navbarNav.getElementsByClassName('nav-link'));
+    
+        navItems.forEach(function (navItem) {
+            navItem.addEventListener('click', function (event) {
+                navItems.forEach(function (link) {
+                    link.classList.remove('active');
+                });
+                event.target.classList.add('active');
+            });
+        });
+    });
+    </script>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>444 Somerville Ave, Somerville, MA 02143</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small> 617.500.9990 </small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center mx-n2">
+                    
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href="https://www.linkedin.com/company/northeast-clean-energy-council/"><i class="fab fa-linkedin-in"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <h2 class="m-0 text-primary">TCTAC</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="tab-pages">About</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item" id="tab-team">Staff</a>
+                        <a href="#" class="dropdown-item" id="tab-testimonial">Partner Organization</a>
+                        <a href="#" class="dropdown-item" id="tab-feature">NECEC</a>
+                        <!-- <a href="#" class="dropdown-item" id="tab-quote">Quote</a> -->
+                        <!-- <a href="#" class="dropdown-item" id="tab-404">404 Page</a> -->
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="tab-home">Events</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item" id="tabAbout">Events Calender</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <!-- <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="tab-mission">Resource Center</a> -->
+                    <span class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="tab-mission">Resource Center</span>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="https://opr.ca.gov/docs/20200624-Model_EJ_Policies_for_General_Plans.pdf" class="dropdown-item" id="tabAbout">Model Legislation</a>
+                        <a href="https://19january2017snapshot.epa.gov/aboutepa/epas-themes-meeting-challenge-ahead_.html
+                        " class="dropdown-item" id="tabAbout">EJ Play Book</a>
+                    </div>
+                </div>
+                <!-- <a href="#" class="nav-item nav-link active" id="tab-home">Home</a> -->
+                <!-- <a href="#" class="nav-item nav-link" id="tab-mission">The Background - EJ TCTAC</a> -->
+                <!-- <a href="#" class="nav-item nav-link" id="tab-service">NECEC Mission</a> -->
+                <!-- <a href="#" class="nav-item nav-link" id="tab-Overview">Overview</a> -->
+                
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="tab-project">Online Tools</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="https://screeningtool.geoplatform.gov/en/#3/48.46/-103.42" class="dropdown-item" id="tabAbout">Energy Burden</a>
+                        <a href="https://www.donorperfect.com/landing/utm/ppc/brand-np/?creative=660502501377&keyword=donorperfect&matchtype=p&network=g&device=c&utm_source=google&utm_medium=ppc&utm_campaign=ppc-google&utm_content=50341732790&utm_term=donorperfect&gclid=EAIaIQobChMIoevb7uPAgAMVU1VyCh1UoA4JEAMYASAAEgI7-fD_BwE" class="dropdown-item" id="tabAbout">Donor Perfect Preferred</a>
+                        <a href="#" class="dropdown-item" id="tabAbout">Project Management Software</a>
+                        <a href="https://www.epa.gov/grants" class="dropdown-item" id="tabAbout">Grants</a>
+                        <a href="#" class="dropdown-item" id="tabAbout">Database and Donor Direction</a>
+                        <a href="#" class="dropdown-item" id="tab-Contact">Contact</a>
+                    </div>
+                </div>
+                <!-- <a href="#" class="nav-item nav-link" id ="tab-contact">Contact</a> -->
+            </div>
+            <!-- <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Requesting Services<i class="fa fa-arrow-right ms-3"></i></a> -->
+            <a href="#" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block" id="tab-quote">Requesting Services<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <main>
+
+    <section id="content-home">
+        
+    <!-- Carousel Start -->
+    <div>
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Image 1.jpg'>">
+                <img class="img-fluid" src="img/Image 1.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">Community Outreach and Engagement</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Offering Multi-Lingual Awareness Campaign Events</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Image 2.jpg'>">
+                <img class="img-fluid" src="img/Image 2.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">Education Programs</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Online Self Paced Training, Instructor lead Workshops, Knowledge sharing, EJ Playbooks Guidebooks </p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Shutterstock.jpg'>">
+                <img class="img-fluid" src="img/Shutterstock.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">Service Provider Network (On Demand)</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Grant Writing, Engineering Services, Legal, project Financing</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/Image 3.jpg'>">
+                <img class="img-fluid" src="img/Image 3.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-2 text-white animated slideInDown">EJ Community Needs Assessment</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Referrals to service providers for Minor Specialized Request, Project Feasibility Assessment for Major challenges</p>
+                                <a href="" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Carousel End -->
+
+    </div>
+    </section>
+
+
+    <section id="content-feature">
+        <div>
+    <!-- Feature Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-users text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">9</h1>
+                    </div>
+                    <h5 class="mb-3">Community Outreach Manager</h5>
+                    <span>  </span>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">4</h1>
+                    </div>
+                    <h5 class="mb-3">Partnership Manager</h5>
+                    <span>  </span>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-award text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">5</h1>
+                    </div>
+                    <h5 class="mb-3">Marketing Manager </h5>
+                    <span> </span>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-users-cog text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">6</h1>
+                    </div>
+                    <h5 class="mb-3">Web Site Manager</h5>
+                    <span> </span>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-users-cog text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">2</h1>
+                    </div>
+                    <h5 class="mb-3">Operations and Finance</h5>
+                    <span> </span>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-primary rounded-circle me-3">
+                            <i class="fa fa-users-cog text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">7</h1>
+                    </div>
+                    <h5 class="mb-3">EJ Fellow</h5>
+                    <span> </span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <h6 class="text-primary" >NECEC</h1>
+                        <h2 class="mb-4">Our Mission:</h2>
+                        <p class="mb-4 pb-2">NECEC leads the just, equitable and rapid transition to a clean energy future and diverse climate economy.</p>
+                        <h2 class="mb-4"></h2>
+                        <p class="mb-4 pb-2">NECEC is committed to diversity, equity, and inclusion. We embrace a broad range of perspectives that will make our organization stronger and our work more just. We will continuously look inward at our own culture to make sure we’re reaching our goal of promoting these values. And, as the voice of the Northeast clean energy industry, NECEC will work with our members and community to embed these values across the industry. We are dedicated to securing a just transition to a clean economy, one that corrects the disproportionate impacts of climate change and secures a better future for all. This is the path to a prosperous clean energy future that benefits all communities.</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Policy</p>
+                                        <h5 class="mb-0">Services</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-user-check text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Expert</p>
+                                        <h5 class="mb-0">Profesionals</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-drafting-compass text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Innovation</p>
+                                        <h5 class="mb-0">Memberships</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-lg-square bg-primary rounded-circle">
+                                        <i class="fa fa-headphones text-white"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-0">Customer</p>
+                                        <h5 class="mb-0">Support</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/Ctone 23.png" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature Start -->
+</div>
+</section>
+
+
+<section id="content-mission">
+    <div>
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/EJ-TCTAC.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h6 class="text-primary">   </h6>
+                        <h4 class="fa fa-check-circle text-primary me-3"> The Background - EJ TCTAC</h4>
+                        <p>“ Historically, underserved communities have been
+                            disproportionately burdened by environmental hazards and
+                            health consequences and have faced environmental and energy
+                            justice challenges. These communities are often exposed to
+                            unhealthy land uses, poor air and water quality, dilapidated
+                            housing, lead exposure, and other environmental threats that
+                            drive health disparities.” - Environmental Justice Thriving
+                            Communities Technical Assistance Centers Program (EJ
+                            TCTAC) Request for Application from the EPA.
+
+                            The goal of EJ TCTAC is to create a network of Technical
+                            Assistance Centers that support environmental and energy
+                            justice initiatives in the each of EPA Regions. The EJ TCTAC
+                            is a first time to effort by the EPA to address years of
+                            environmental and energy injustice.</p>
+                        
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+</div>
+</section>
+
+<!-- <section id="content-Overview">
+    <div> -->
+    <!-- About Start -->
+    <!-- <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/Wind-Turbine.png" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/Overview.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h6 class="text-primary">   </h6>
+                        <h2 class="mb-4"> The Concept - EJ TCTAC Core Service Offering</h2>
+                        <h4 class="fa fa-check-circle text-primary me-3">Outreach:</h4>
+                        <p>EJ TCTAC is responsible for building
+                            awareness with EJC of its service offering.</p>
+                            <h4 class="fa fa-check-circle text-primary me-3">Grant Technical Assistance:</h4>
+                        <p>Assist and educate
+                            EJC's with the process of applying for federal, state or philanthropic grants.</p>
+                            <h4 class="fa fa-check-circle text-primary me-3">Community Collaboration:</h4>
+                        <p>Assist EJC's in the
+                            development of environmental protection, health,
+                            and justice programs, and energy justice
+                            programs, and how to participate in them, and
+                            effectively manage grants administratively and
+                            programmatically.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- About End -->
+<!-- </div>
+</section> -->
+
+<!-- <section id="content-service">
+    <div> -->
+
+
+     <!-- About Start -->
+    <!-- <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h6 class="text-primary">   </h6>
+                        <h4 class="fa fa-check-circle text-primary me-3""> Our Mission: </h4>
+                        <p>NECEC leads the just, equitable and rapid transition to a clean energy future and diverse climate economy.</p>
+                        <h4 class="fa fa-check-circle text-primary me-3"> Our Vision: </h4>
+                        <p>All people in the Northeast, regardless of their socioeconomic background, have access to the clean energy future 
+                        and equitable climate economy. The just transition to a clean energy economy empowers a strong, diverse, and inclusive 
+                        workforce, integrates technology seamlessly into our lives and communities, and addresses the climate crisis in ways 
+                        that free us from our dependence on fossil fuels. NECEC is at the center of public discourse, connecting people across 
+                        all communities, empowering innovation to take root and new technology to scale so that we undo historical injustices 
+                        and align economic prosperity with the health of our climate and our people.</p>
+                        
+                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">  </a>
+                    </div>
+                </div> 
+             </div>
+        </div>
+    </div> -->
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Our Mission</h6>
+                <h1 class="mb-4">NECEC leads the just, equitable and rapid transition to a clean energy future and diverse climate economy.</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/Policy landing page-a3244eda.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Policy</h4>
+                            <p>As the leading clean energy business organization in the region, NECEC is the business voice of the region’s clean energy industry, influencing the energy policy agenda and growing the clean energy economy.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/Innovation landing page-911d1d89.jpg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-wind fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Navigate</h4>
+                            <p>NECEC’s Navigate program leverages the power of NECEC's networks to provide cleantech startups access to resources and business support to grow and scale.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/ctone.png" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Cleantech Open National</h4>
+                            <p>WE FIND, FUND, AND FOSTER THE MOST PROMISING CLEANTECH STARTUPS ON THE PLANET.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/DEIJ page-c8198123.png" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-solar-panel fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">DEIJ </h4>
+                            <p>NECEC leads the just, equitable and rapid transition to a clean energy future and diverse climate economy.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/NECEC-Institute.jpeg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-wind fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">NECEC Institute</h4>
+                            <p>NECEC's sister organization, NECEC Institute's mission is to accelerate the region's clean energy economy to global leadership by building an active community of stakeholders and a world-class cluster of clean energy companies.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item rounded overflow-hidden">
+                        <img class="img-fluid" src="img/Career.jpeg" alt="">
+                        <div class="position-relative p-4 pt-0">
+                            <div class="service-icon">
+                                <i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-3">Careers</h4>
+                            <p>Job and internship opportunities at NECEC and across the clean energy industry.</p>
+                            <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Service End -->
+<!-- </div>
+</section> -->
+
+<section id="content-contact">
+    <div>
+
+
+        <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
+            <div class="container contact px-lg-0">
+                <div class="row g-0 mx-lg-0">
+                    <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="p-lg-5 ps-lg-0">
+                            <h6 class="text-primary">Contact Us</h6>
+                            <h1 class="mb-4">Feel Free To Contact Us</h1>
+                    
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                        <div class="position-relative h-100">
+                            <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                            frameborder="0" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- <section id="content-404">
+    <div> -->
+       
+
+
+    <!-- 404 Start -->
+    <!-- <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
+                    <h1 class="display-1">404</h1>
+                    <h1 class="mb-4">Page Not Found</h1>
+                    <p class="mb-4">We're sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="">Go Back To Home</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- 404 End -->
+
+    <!-- </div>
+</section> -->
+
+
+<section id="content-project">
+    <div>
+    <!-- Projects Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary">Our Projects</h6>
+                <h1 class="mb-4">Visit Our Latest Solar And Renewable Energy Projects</h1>
+            </div>
+            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">All</li>
+                        <li class="mx-2" data-filter=".first">About</li>
+                        <li class="mx-2" data-filter=".second">Model Legislation</li>
+                        <li class="mx-2" data-filter=".third">Resource Center</li>
+                        <li class="mx-2" data-filter=".third">Directory</li>
+                        <li class="mx-2" data-filter=".third">Online Tools</li>
+                        <li class="mx-2" data-filter=".third">Contact</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-6.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">About</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base"> </h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0"> </p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base"> </h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-4.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Model Legislation</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base"> </h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item first">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-3.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Resource Center</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base"> </h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item second">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Wind Turbines</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base"> </h5>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item third">
+                    <div class="portfolio-img rounded overflow-hidden">
+                        <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
+                        <div class="portfolio-btn">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="pt-3">
+                        <p class="text-primary mb-0">Hydropower Plants</p>
+                        <hr class="text-primary w-25 my-2">
+                        <h5 class="lh-base"> </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+</div>
+</section>
+
+
+
+<section id="content-quote">
+    <div>
+    <!-- Quote Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container quote px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h1 class="text-primary">Want to address environmental and energy justice issues in your community?</h1>
+                        <h1 class="mb-4">We can help.</h1>
+                        <p class="mb-4 pb-2">Whether you have a specific, well defined need or aren't sure where to start, we are here for you. We have teams who can help you assess the challenges your community is facing as well as provide experts who can support you to address these challenges.<br>
+
+                            Please complete the intake form on this page and provide us with some general background on your specific technical support needs. Your inquiry will be forwarded to our community engagement team; we will then contact you directly to obtain additional details, and assist in connecting you with the right individual(s) to support your project.<br>
+                            
+                            For additional background on our team of experts, and the ways in which they may be able to support you, please see  Resources.<br>
+                            If you are not able to complete this form, please call us at XXX-XXX-XXXX and we would be happy to learn about your needs over the phone. <br>
+                            If any of these fields do not apply to you, please fill in NA for Not Applicable.
+                        </p>
+                        <form>
+                            <h1 class="mb-4">Technical Support Request form</h1>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="First Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Last Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Phone" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Organization Name " style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Organization Webpage " style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Organization Directors Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Director Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="City" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="State" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="What can we help you with?" style="height: 55px;">
+                                </div>
+                                <p class="mb-4 pb-2">What level of support would you like to receive: <br>
+                                    __ Comprehensive needs assessment and implementation planning <br>
+                                    __Targeted technical support for a specific issue <br>
+                                    What can we help you with? <br>
+                                    Please describe the environmental and energy justice challenges you would like to address in your community. If you know, please describe any particular technical credentials, expertise or skill sets required.
+                                </p>
+                                <div class="col-12 col-sm-6">
+                                    <h5>Relevant focus area(s)</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option1" value="1">
+                                        <label class="form-check-label" for="option1">
+                                            Environmental justice
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option2" value="2">
+                                        <label class="form-check-label" for="option2">
+                                            Energy justice
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option3" value="3">
+                                        <label class="form-check-label" for="option3">
+                                            Brownfields
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option4" value="4">
+                                        <label class="form-check-label" for="option4">
+                                            Air quality
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option5" value="5">
+                                        <label class="form-check-label" for="option5">
+                                            Water quality
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option6" value="6">
+                                        <label class="form-check-label" for="option6">
+                                            Lead exposure
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option7" value="7">
+                                        <label class="form-check-label" for="option7">
+                                            Solid or hazardous waste
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option8" value="8">
+                                        <label class="form-check-label" for="option8">
+                                            Environmental health
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option9" value="9">
+                                        <label class="form-check-label" for="option9">
+                                            Clean energy development
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option10" value="10">
+                                        <label class="form-check-label" for="option10">
+                                            Policy & regulation
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option11" value="11">
+                                        <label class="form-check-label" for="option11">
+                                            Workforce development for green jobs
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option12" value="12">
+                                        <label class="form-check-label" for="option12">
+                                            Grant/funding support
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option13" value="13">
+                                        <label class="form-check-label" for="option13">
+                                            Grant management support
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option14" value="14">
+                                        <label class="form-check-label" for="option14">
+                                            Other
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+</div>
+</section>
+    <!-- Team Start -->
+     <section id="content-team">
+        <div>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary"> </h6>
+                <h1 class="mb-4"></button>Staff</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded overflow-hidden">
+                        <div class="d-flex">
+                            <img class="img-fluid w-75" src="img/team-1.jpg" alt="">
+                            <div class="team-social w-25">
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Full Name</h5>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded overflow-hidden">
+                        <div class="d-flex">
+                            <img class="img-fluid w-75" src="img/team-2.jpg" alt="">
+                            <div class="team-social w-25">
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Full Name</h5>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded overflow-hidden">
+                        <div class="d-flex">
+                            <img class="img-fluid w-75" src="img/team-3.jpg" alt="">
+                            <div class="team-social w-25">
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-outline-primary rounded-circle mt-3" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Full Name</h5>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+</div>
+</section>
+
+<section id="content-testimonial">
+    <div>
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-primary"> Partner Organization </h6>
+                <h1 class="mb-4">What Our Partners Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-square mx-auto mb-5" src="img/NYSERDA.png" style="width: 250px; height: 200px;">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>The goal of EJ TCTAC is to create a network of Technical
+                            Assistance Centers that support environmental and energy
+                            justice initiatives in the each of EPA Regions. The EJ TCTAC
+                            is a first time to effort by the EPA to address years of
+                            environmental and energy injustice.</p>
+                        <h5 class="mb-1">Partner Organization</h5>
+                        <span class="fst-italic">Sector</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-square mx-auto mb-5" src="img/poweroptions.png" style="width: 250px; height: 200px;">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>The goal of EJ TCTAC is to create a network of Technical
+                            Assistance Centers that support environmental and energy
+                            justice initiatives in the each of EPA Regions. The EJ TCTAC
+                            is a first time to effort by the EPA to address years of
+                            environmental and energy injustice.</p>
+                        <h5 class="mb-1">Partner Organization</h5>
+                        <span class="fst-italic">Sector</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-square mx-auto mb-5" src="img/triumverateclean.png" style="width: 250px; height: 200px;">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>The goal of EJ TCTAC is to create a network of Technical
+                            Assistance Centers that support environmental and energy
+                            justice initiatives in the each of EPA Regions. The EJ TCTAC
+                            is a first time to effort by the EPA to address years of
+                            environmental and energy injustice.</p>
+                        <h5 class="mb-1">Partner Organization</h5>
+                        <span class="fst-italic">Sector</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+</div>
+</section>
+
+    </main>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>444 Somerville Ave, Somerville, MA 02143</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>617.500.9990</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>communications@necec.org</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        
+                        
+                        <a class="btn btn-square btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Project Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Kiowa_Gourd_Clan_Ceremonial.png" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Native.webp" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Maine1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/maine-best-small-towns-farmington.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Shutterstock.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/Image 1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Membership with NECEC is Must.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

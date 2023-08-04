@@ -1,0 +1,50 @@
+/* 
+list of routes.
+auto generated.
+*/
+var Routing = $.ExposeRouting;
+
+Routing.prefix = ""; 
+Routing.variablePrefix = [":"]; 
+Routing.variableSuffix = ""; 
+Routing.segmentSeparators = ["\/","."]; 
+Routing.defaults = {"sf_culture":"en"}; 
+Routing.csrf = {"_csrf_token":"74d828c9285e84c6db6693def7902cad"};
+Routing.methodParameterName = "sf_method";
+Routing.connect("notifications_feed", "\/:sf_culture\/notifications\/feed", []);
+Routing.connect("notifications_get_options", "\/:sf_culture\/notifications\/options\/:componentId", []);
+Routing.connect("notifications_entries_get", "\/:sf_culture\/notifications\/feed\/list", []);
+Routing.connect("notifications_autocomplete_suggestions", "\/:sf_culture\/notification\/feed\/autocomplete\/:componentId", []);
+Routing.connect("notifications_feed_tags", "\/:sf_culture\/notification\/feed\/tags", []);
+Routing.connect("notifications_feed_follow_tag", "\/:sf_culture\/tags\/feed\/follow\/:tagId", []);
+Routing.connect("notifications_feed_unffollow_tag", "\/:sf_culture\/tags\/feed\/unfollow\/:tagId", []);
+Routing.connect("notifications_reset_counter", "\/:sf_culture\/tags\/feed\/reset-counter\/:userId", []);
+Routing.connect("skipso_new_remove_entry_assignments", "\/:sf_culture\/new\/assignments\/unassign\/entries\/:entry\/:type\/:assigned_entries", []);
+Routing.connect("skipso_admin_section_get_by_name", "\/:sf_culture\/custom\/sections\/get-by-name", []);
+Routing.connect("skipso_admin_section_widgets_get_by_name", "\/:sf_culture\/custom\/sections\/:sectionId\/widgets", []);
+Routing.connect("skipso_admin_entries_get_all_json", "\/:sf_culture\/custom\/manage\/:section\/get\/json\/entries\/:parent_entry_id\/:challenge_id", {"section":"entry","parent_entry_id":"0","challenge_id":"0"});
+Routing.connect("skipso_entry_remove_member_request", "\/:sf_culture\/custom\/:section\/remove\/member\/:entry_id\/:member_type\/:return_type", {"section":"entry","member_type":"2","return_type":"text"});
+Routing.connect("skipso_entry_notes", "\/:sf_culture\/custom\/:section\/notes\/view\/:entry_id", {"section":"entry"});
+Routing.connect("pipeline_vars", "\/:sf_culture\/custom\/:section\/pipeline\/get-vars\/:pipeline", []);
+Routing.connect("kpi_edit_allowance", "\/:sf_culture\/kpi\/allowance\/edit\/:entryId", []);
+Routing.connect("kpi_add_allowance", "\/:sf_culture\/kpi\/add\/:entryId", []);
+Routing.connect("thread_message_add", "\/:sf_culture\/messaging\/add\/:thread_id\/:modal", {"modal":"0"});
+Routing.connect("thread_message_delete", "\/:sf_culture\/messaging\/delete\/message\/:message_id", []);
+Routing.connect("thread_message_file_upload", "\/:sf_culture\/messaging\/view\/:thread_id\/add\/:message_id", []);
+Routing.connect("thread_like_message", "\/:sf_culture\/messaging\/like\/message\/:message_id", []);
+Routing.connect("thread_reply_message", "\/:sf_culture\/messaging\/reply\/message\/:message_id", []);
+Routing.connect("thread_message_replies", "\/:sf_culture\/messaging\/message\/:message_id\/replies", []);
+Routing.connect("thread_like_message_reply", "\/:sf_culture\/messaging\/like\/reply\/:reply_id", []);
+Routing.connect("thread_remove_message_reply", "\/:sf_culture\/messaging\/remove\/reply\/:reply_id", []);
+Routing.connect("thread_new_message_id", "\/:sf_culture\/messaging\/message\/new\/identifier\/:thread_id", []);
+Routing.connect("rating_get_user_rate", "\/:sf_culture\/messaging\/rating\/:thread_id\/:user_id", []);
+Routing.connect("rating_new_rate", "\/:sf_culture\/messaging\/save-rating\/:thread_id\/:user_id", []);
+Routing.connect("rating_new_review", "\/:sf_culture\/messaging\/save-review\/:thread_id\/:user_id", []);
+Routing.connect("rating_get_count", "\/:sf_culture\/messaging\/count-rating\/:thread_id", []);
+Routing.connect("rating_get_user_rate_by_entry", "\/:sf_culture\/messaging\/rating\/entry\/:entryId\/:userId", []);
+Routing.connect("comments_challenge_get", "\/:sf_culture\/challenge\/idea\/:idea\/comments", []);
+Routing.connect("comment_post_comment", "\/:sf_culture\/challenge\/:challenge\/idea\/comment", []);
+Routing.connect("comment_delete_comment", "\/:sf_culture\/challenge\/comment\/:comment\/delete", []);
+Routing.connect("comment_get_likes", "\/:sf_culture\/challenge\/comment\/:comment\/likes", []);
+Routing.connect("comment_like_comment", "\/:sf_culture\/challenge\/comment\/:comment\/like\/:user", []);
+Routing.connect("comment_unlike_comment", "\/:sf_culture\/challenge\/comment\/:comment\/unlike\/:user", []);

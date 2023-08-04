@@ -1,0 +1,7 @@
+var script=document.createElement("script");script.src="/platform/routes.js",document.head.appendChild(script),
+/*!
+ * routing.js
+ * Copyright (c) 2011 Julien Muetton <julien_muetton@carpe-hora.com>
+ * MIT Licensed
+ */
+$.ExposeRouting=$.ExposeRouting||{},function(e,t,r){Object.assign(e,function(){var r={},n={},o=/\?/,i=/^\//,a=/[-[\]{}()*+?.,\\^$|#\s]/g,s=/\/\//g;function u(e,r){var n,o=[];for(t.isArray(e)||(e=[e]),n=0;n<e.length;n++)o[n]=e[n].replace(a,"\\$&");return r&&o.push(r),1<o.length?o.join("|"):o.length?o[0]:""}function c(t,r){var n,o=t,i=e.segmentSeparators,a=u(e.variablePrefix),s=u(e.variableSuffix),c="("+u(i,"^")+")"+a,f=s+"("+u(i,"$")+")";for(n in r){var p=new RegExp(c+n+f,"");p.test(o)&&(o=o.replace(p,"$1"+r[n]+"$2"),delete r[n])}return o}return{defaults:{},variableSuffix:"",variablePrefix:":",segmentSeparators:["/","."],prefix:"",csrf:{},generate:function(t,r){var a,u=e.get(t),f=Object.assign({},n[t]||{},r||{}),p=u;if(!p)throw"No matching route for "+t;return p=c(p=c(p,f),Object.assign({},e.defaults||{})),(a=function(e){var t=[];for(var r in e)e.hasOwnProperty(r)&&t.push(encodeURIComponent(r)+"="+encodeURIComponent(e[r]));return t.join("&")}(f)).length&&(p+=(o.test(p)?"&":"?")+a),p=(i.test(p)?"":"/")+p,p=e.prefix+p,(p=(i.test(p)?"":"/")+p).replace(s,"/")},connect:function(t,o,i){return r[t]=o,n[t]=i||{},e},get:function(e){return r[e]||void 0},has:function(e){return!!r[e]},flush:function(){return r={},n={},e}}}())}($.ExposeRouting,jQuery);
